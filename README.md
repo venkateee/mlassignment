@@ -48,3 +48,11 @@ weighted averages (multi-class dataset).
 | Overall winner | SVM (0.980 accuracy, 0.999 AUC), narrowly ahead of Logistic Regression — the RBF kernel captures the non-linear boundaries between digits. |
 
 ## How to run locally
+
+pip install -r requirements.txt
+python train_models.py
+streamlit run app.py
+
+
+## Live app
+https://mlassignment-txvopmmny8uj6mxa3axivd.streamlit.app/
