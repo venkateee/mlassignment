@@ -48,3 +48,10 @@ weighted averages (multi-class dataset).
 | Overall winner | Logistic Regression (0.9778 accuracy, 0.9991 AUC), the strongest of the five required models; the standardized pixel features are largely linearly separable across the ten classes, edging out the tree-based and distance-based methods. |
 
 ## How to run locally
+
+pip install -r requirements.txt
+python train_models.py
+streamlit run app.py
+
+## Live app
+https://mlassignment-txvopmmny8uj6mxa3axivd.streamlit.app/
