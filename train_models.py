@@ -27,7 +27,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC                        # optional 6th model
 
 from sklearn.metrics import (
     accuracy_score, roc_auc_score, precision_score,
@@ -68,7 +67,6 @@ models = {
     "kNN":                     make_pipeline(StandardScaler(), KNeighborsClassifier(n_neighbors=5)),
     "Naive Bayes":             make_pipeline(StandardScaler(), GaussianNB()),
     "Random Forest":           make_pipeline(StandardScaler(), RandomForestClassifier(n_estimators=200, random_state=RANDOM_STATE)),
-    "SVM":                     make_pipeline(StandardScaler(), SVC(probability=True, random_state=RANDOM_STATE)),  # optional
 }
 
 
